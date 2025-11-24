@@ -45,6 +45,11 @@ class TallyCounter extends Frame{
                 display.setText("0");
             }
         });
+        addWindowListener(new WindowAapter(){
+            public void windowClosing(WindowEvent e){
+                System.exit(0);
+            }
+        });
 
         add(display);
         add(increment);
